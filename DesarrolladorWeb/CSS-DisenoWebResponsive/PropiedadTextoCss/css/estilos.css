@@ -1,0 +1,32 @@
+@font-face{
+  font-family: 'FreeSans';
+  src:url('FreeSans.otf');
+}
+
+h1{
+  font-family: 'FreeSans';
+  font-size: 2em;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: overline;
+  text-transform: uppercase;
+  word-spacing: 30px;
+  color: orange;
+  text-shadow: 1px 2px 3px red;
+}
+
+p{
+  font-family: 'Indie Flower',cursive;
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: justify;
+  text-indent: 2cm;
+  letter-spacing: 5px;
+  /* white-space: pre; Una Sola Linea */
+}
+
+p::selection{
+  background: orange;
+  color: black;
+  text-shadow: 1px 1px #fff;
+}

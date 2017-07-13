@@ -1,0 +1,17 @@
+div {
+    width: 600;
+    height: 100;
+    background-color: blue;
+    border: 1px solid black;
+    margin-left: 900;
+
+}
+
+#original {
+  margin-top: 300px;
+  margin-bottom: 200px;
+}
+
+#transformado {
+  transform: scale(0.5,2);
+}

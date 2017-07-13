@@ -1,0 +1,66 @@
+#contenedor img {
+    width: 600px;
+    height: 400px;
+}
+
+/*DESENFOQUE BLUR*/
+.desenfoque{
+  -webkit-filter:blur(30px);
+  filter: blur(30px );
+}
+
+
+/*ESCALA DE GRISES*/
+.escalagrises{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+/*SEPIA*/
+.sepia{
+  -webkit-filter:sepia(100%);
+  filter:sepia(100%);
+}
+
+/*BRILLO*/
+.brillo{
+  -webkit-filter:brightness(80%);
+  filter:brightness(80%);
+}
+
+/*ROTATE*/
+.huerotate{
+  -webkit-filter:hue-rotate(80%);
+  filter:hue-rotate(80%);
+}
+
+/*OPACIDAD*/
+.opacity{
+  -webkit-filter:opacity(60%);
+  filter:opacity(60%);
+}
+
+/*DROP SHADOW*/
+.dropshadow{
+  -webkit-filter:drop-shadow(15px 20px 25px blue);
+  filter:drop-shadow(15px 20px 25px blue);
+}
+
+/*INVERT*/
+.invert{
+  -webkit-filter:invert(80%);
+  filter:invert(80%);
+}
+
+/*SATURATET*/
+.saturate{
+  -webkit-filter:saturate(80%);
+  filter:saturate(80%);
+}
+
+/*CONTRAST*/
+.contraste{
+  -webkit-filter:contrast(80%);
+  filter:contrast(80%);
+}

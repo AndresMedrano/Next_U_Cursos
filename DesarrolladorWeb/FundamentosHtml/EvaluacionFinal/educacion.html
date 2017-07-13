@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Andres Medrano">
+    <meta name="keywords" content="imagenes, html">
+    <meta name="viewport" contet="width=device-width,user-scalable=yes">
+    <title>Hoja de Vida Andrés Medrano Vizcaíno</title>
+</head>
+
+<center>
+
+    <body>
+
+        <header id="#inicio">
+            <table>
+                <tr>
+                    <td><img src="img/logo-jamv.svg" alt="Logo JAMV"></td>
+                    <td>
+                        <h1>CURRICULUM VITAE</h1></td>
+                </tr>
+            </table>
+            <h2>JAVIER ANDRÉS MEDRANO VIZCAÍNO</h2>
+            <h3> Quito 9 de Marzo de 1989</h3>
+        </header>
+
+        <nav>
+            <a href="../EvaluacionFinal/index.html">INICIO</a> | <a href="../EvaluacionFinal/educacion.html">EDUCACIÓN</a> | <a href="../EvaluacionFinal/experiencia.html">EXPERIENCIA</a>
+        </nav>
+
+        <section>
+            <article id="Educacion">
+                <p>
+                    <h2>Educación</h2></p>
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th>Año</th>
+                        <th>Institución</th>
+                        <th>Lugar</th>
+                        <th>¿Culminó?</th>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>Universidad Metropolitana</td>
+                        <td>Quito</td>
+                        <td>En Curso</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>Unidad Educativa San Pedo Pascual</td>
+                        <td>Quito</td>
+                        <td>SI</td>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="Estudios">
+                <p>
+                    <h2>Estudios</h2></p>
+                <form action="educacion.html" method="post">
+                    <label for="anio"><strong>Año:</strong></label>
+                    <select name="anio">
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                    </select><br><br>
+                      <label for="Institucion"><strong>Institución:</strong></label>
+                      <input type="text" name="institucion"><br><br>
+                      <label for="lugar"><strong>Lugar:</strong></label>
+                      <input type="text" size="25" maxlength="30"  name="lugar"><br><br>
+                      <label for="culmino"><strong>¿Culminó?</strong></label>
+                      <input type="radio" name="culmino"> SI
+                      <input type="radio" name="culmino"> NO
+                      <input type="submit" value="Enviar">
+                </form>
+
+            </article>
+        </section>
+
+        <footer>
+            <p>
+                <strong>CORREO ELECTRÓNICO:</strong> <a href="mailto:andres.medrano@softech.com.ec" target="_blank">andres.medrano@softech.com.ec</a> - <strong>TELÉFONO:</strong> 0984228707 -
+                <strong><a href="http://andresmedrano.softech.com.ec" target="_blank">MI HOJA DE VIDA DIGITAL</a> </strong> <br><br> <strong>REDES SOCIALES</strong><br>
+                <a href="https://www.facebook.com/AndreixPC" target="_blank"><img src="img/fb-ico.png" alt="Facebook" width="25px" height="25px"></a>
+                <a href="https://twitter.com/AndreixPC" target="_blank"><img src="img/tw-ico.png" alt="Twitter" width="25px" height="25px"></a>
+                <a href="https://www.instagram.com/AndreixPc/" target="_blank"><img src="img/inst-ico.png" alt="Instagram" width="25px" height="25px"></a>
+                <a href="https://www.youtube.com/channel/UCBxL-aGwXIdZH5p5yoD47jg" target="_blank"><img src="img/yt-ico.png" alt="Youtube" width="25px" height="25px"></a>
+            </p>
+        </footer>
+
+    </body>
+</center>
+
+</html>

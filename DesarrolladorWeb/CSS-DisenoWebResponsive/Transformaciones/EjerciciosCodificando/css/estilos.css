@@ -1,0 +1,92 @@
+body {
+    font-family: Arial;
+    width: 90%;
+    margin-left: 5%;
+}
+
+header {
+    padding: 1vh 1vw;
+    margin-bottom: 1vh;
+    border-radius: 1vh;
+    background-color: #669999;
+}
+
+#contenido {
+    margin: 1%;
+}
+
+header h1 {
+    padding-left: 1%;
+    font-size: 1.5em;
+}
+
+footer {
+    font-size: 0.8em;
+    border-top: solid 2px #1f47a8;
+    padding-top: 1vw;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    margin: 100px;
+}
+
+figure img {
+    width: 420px;
+}
+
+#imagen1 {
+    /*SKEW*/
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+    /*PERSPECTIVA*/
+    /*perspective: 2000px;
+    -webki-perspective: 2000px;*/
+    /*ROTACION*/
+    /*-ms-transform: rotate(7deg);  IE 9
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera
+    /*transform: rotate(7deg);*/
+}
+/*ROTACION EN PERSPECTIVA*/
+/*#imagen1 img {
+    transform: rotateY(40deg);
+}*/
+
+#imagen2 {
+    /*SKEW*/
+    -ms-transform: skewX(70deg); /* IE 9 */
+    -webkit-transform: skewX(70deg); /* Safari */
+    transform: skewX(70deg);
+    /*PERSPECTIVA*/
+    /*-webkit-perspective: 3000px;  Chrome, Safari, Opera
+    perspective: 3000px;*/
+    /*ROTACION*/
+    /*-ms-transform: rotate(90deg); /* IE 9 */
+    /*-webkit-transform: rotate(90deg);*/  /* Chrome, Safari, Opera */
+    /*transform: rotate(90deg);*/
+}
+/*ROTACION EN PERSPECTIVA*/
+/*#imagen2 img {
+    transform: rotateY(-30deg);
+}*/
+
+#imagen3 {
+    /*SKEW*/
+    -ms-transform: skewY(-10deg); /* IE 9 */
+    -webkit-transform: skewY(-10deg); /* Safari */
+    transform: skewY(-10deg);
+    /*PERSPECTIVA*/
+    /*-webkit-perspective: 100px;  /* Chrome, Safari, Opera
+    perspective: 100px;*/
+    /*ROTACION
+    -ms-transform: rotate(-10deg); IE 9
+    -webkit-transform: rotate(-10deg); Chrome, Safari, Opera
+    transform: rotate(-10deg);*/
+}
+/*ROTACION EN PERSPECTIVA*/
+/*#imagen3 img {
+    transform: rotateX(40deg);
+}*/
