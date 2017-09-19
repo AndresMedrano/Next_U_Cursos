@@ -5,12 +5,12 @@ var Estructura = {
       "Edad": 28,
       "Direccion": "Guayllabamba",
       "Telefono": "023591094",
-      "Estudios": [
-        "Primaria Escolar": {
+      "Estudios":[
+        "Primaria Escolar":{
           "Lugar": "Unidad Educativa Eugenio Espejo",
           "Fecha": "1994 - 1999"
         },
-        "Colegio" : {
+        "Colegio" :{
           "Lugar": "Unidad Educativa San Pedro Pascual",
           "Fecha": "2001 - 2009"
           }
@@ -21,12 +21,12 @@ var Estructura = {
       "Edad": 24,
       "Direccion": "Guayllabamba",
       "Telefono": "023591094",
-      "Estudios": [
-        "Primaria Escolar": {
+      "Estudios":[
+        "Primaria Escolar":{
           "Lugar": "Unidad Educativa Eugenio Espejo",
           "Fecha": "1994 - 1999"
           },
-        "Colegio" : {
+        "Colegio" :{
           "Lugar": "Unidad Educativa San Pedro Pascual",
           "Fecha": "2001 - 2009"
           }
