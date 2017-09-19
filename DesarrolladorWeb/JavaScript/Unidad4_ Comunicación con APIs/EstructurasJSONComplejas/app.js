@@ -1,0 +1,36 @@
+var Estructura = {
+    "Personas":[
+      {
+        "Nombre": "Andrés",
+        "Edad": 28,
+        "Direccion": "Guayllabamba",
+        "Telefono": "023591094",
+        "Estudios":[
+          "Primaria Escolar":{
+            "Lugar": "Unidad Educativa Eugenio Espejo",
+            "Fecha": "1994 - 1999"
+          },
+          "Colegio":{
+            "Lugar": "Unidad Educativa San Pedro Pascual",
+            "Fecha": "2001 - 2009",
+          }
+        ]
+      },
+      {
+        "Nombre": "Carolina",
+        "Edad": 24,
+        "Direccion": "Guayllabamba",
+        "Telefono": "02369078",
+        "Estudios":[
+          "Primaria Escolar":{
+            "Lugar": "Unidad Educativa San Francisco de Quito",
+            "Fecha": "1994 - 1999"
+          },
+          "Colegio":{
+            "Lugar": "Colegio Nacional Guayllabamba",
+            "Fecha": "2001 - 2009",
+          }
+        ]
+      }
+    ]
+}
