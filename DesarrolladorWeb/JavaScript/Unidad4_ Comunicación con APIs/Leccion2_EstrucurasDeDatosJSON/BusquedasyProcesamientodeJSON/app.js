@@ -34,3 +34,6 @@ var Estructura = {
       }
     ]
 }
+
+var persona1 = Estructura.Personas[0];
+var persona2 = Estructura.Personas[1];

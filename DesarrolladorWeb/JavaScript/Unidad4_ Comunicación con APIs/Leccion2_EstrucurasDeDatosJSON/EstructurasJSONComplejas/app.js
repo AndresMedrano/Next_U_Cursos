@@ -8,7 +8,7 @@ var Estructura = {
         "Estudios":[
           "Primaria Escolar":{
             "Lugar": "Unidad Educativa Eugenio Espejo",
-            "Fecha": "1994 - 1999",
+            "Fecha": "1994 - 1999"
           },
           "Colegio":{
             "Lugar": "Unidad Educativa San Pedro Pascual",
@@ -24,7 +24,7 @@ var Estructura = {
         "Estudios":[
           "Primaria Escolar":{
             "Lugar": "Unidad Educativa San Francisco de Quito",
-            "Fecha": "1994 - 1999",
+            "Fecha": "1994 - 1999"
           },
           "Colegio":{
             "Lugar": "Colegio Nacional Guayllabamba",
