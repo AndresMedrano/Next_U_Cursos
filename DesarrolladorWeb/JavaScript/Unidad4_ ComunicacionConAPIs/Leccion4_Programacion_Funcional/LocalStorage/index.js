@@ -48,7 +48,8 @@ var Agenda = {
   init: function(){
     this.listenMapClick()
     this.sitiosGuardados = []
-    sessionStorage.setItem('sitios', JSON.stringify(this.sitiosGuardados))
+    this.loadSites()
+    //sessionStorage.setItem('sitios', JSON.stringify(this.sitiosGuardados))
   },
   listenMapClick: function(){
     var self = this
@@ -75,9 +76,11 @@ var Agenda = {
     })
   },
   saveAndPlaceMarker: function(site){
-    this.sitiosGuardados = JSON.parse(sessionStorage.getItem('sitios'))
+    if (localStorage.sitios) {
+      this.sitiosGuardados = JSON.parse(localStorage.getItem('sitios'))
+    }
     this.sitiosGuardados.push(site)
-    sessionStorage.setItem('sitios', JSON.stringify(this.sitiosGuardados))
+    localStorage.setItem('sitios', JSON.stringify(this.sitiosGuardados))
     this.renderSite(site)
   },
   renderSite: function(site){
@@ -103,5 +106,14 @@ var Agenda = {
     }
     var newMarker = new google.maps.Marker(markerOpts)
     allSites.innerHTML = allSites.innerHTML + result
+  },
+  loadSites: function() {
+    if (localStorage.sitios) {
+      var sitios = JSON.parse(localStorage.getItem('sitios'))
+      var self = this
+      sitios.map(function (site) {
+        self.renderSite(site)
+      })
+    }
   }
 }

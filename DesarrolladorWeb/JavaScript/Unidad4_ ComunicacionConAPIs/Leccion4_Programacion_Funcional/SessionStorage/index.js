@@ -28,7 +28,7 @@ function initMap() {
   }
   map = new google.maps.Map(mapContainer, config)
   infoWindow = new google.maps.InfoWindow({ map: map })
-
+  Agenda.init()
 }
 
 var button = document.getElementById('btn-geo')
@@ -44,3 +44,69 @@ button.addEventListener('click', function() {
   marker = new google.maps.Marker(markerOpts)
 
 })
+
+
+
+//Aqui empiezo a codificar
+
+var Agenda = {
+  init: function() {
+    this.listenMapClick()
+    this.sitiosGuardados = []
+    sessionStorage.setItem('sitios',JSON.stringify(this.sitiosGuardados))
+  },
+  listenMapClick: function() {
+    var self = this
+    console.log(0);
+    google.maps.event.addListener(map, 'click', function(ev) {
+      var position = ev.latLng
+      var modalInfo = document.getElementByClassName('modalInfo')[0].click()
+      var btnGuardar = document.getElementByClassName('guardarInfo')[0]
+      btnGuardar.onclick =function (e) {
+        e.prevenDefault()
+        var nombre = document.getElementByClassName('modalInfo')[0],
+            descripcion = document.getElementByClassName('descripcion')[0]
+        var site = {
+          nombre: nombre.value,
+          descripcion: descripcion.value,
+          latitud: position.lat(),
+          longitud: position.lng()
+        }
+        self.saveAndPlaceMarker(site)
+        nombre.value = ''
+        descripcion.value = ''
+        $('#modalCaptura').closeModal()
+      }
+    })
+  },
+  saveAndPlaceMarker: function(site) {
+    this.sitiosGuardados = JSON.parse(sessionStorage.getItem('sitios'))
+    this.sitiosGuardados.push(site)
+    sessionStorage.setItem('sitios', JSON.stringify(this.sitiosGuardados))
+    this.renderSite(site)
+  },
+  renderSite: function (site) {
+    var htmlInfo =  '<li class = "collection-item avatar">'+
+                    '<i class="material-icons cicle blue">thumb_up</i>'+
+                    '<span class = "title"> :nombre: </span>'+
+                    '<p> latitud :latitud: <br> longitud :longitud: <br> Descripcion: :descripcion:</p>'+
+                    '<a href = "#!" class="secondary-content"><i class="material-icons">Grande</i></a>'+
+                    '<li>';
+    var newSite = htmlInfo
+    var result = newSite.replace(':nombre:',site.nombre)
+                        .replace(':latitud:',site.latitud)
+                        .replace(':longitud:',site.longitud)
+                        .replace(':descripcion:',site.descripcion)
+    var allSites = document.getElementsByClassName('guardados')[0]
+    var markerOpts = {
+      position: {
+        lat: site.latitud,
+        lng: site.longitud
+      },
+      map:map
+    }
+    var newMarker = new google.maps.Marker(markerOpts)
+    allSites.innerHTML = allSites.innerHTML + result
+  }
+
+}
