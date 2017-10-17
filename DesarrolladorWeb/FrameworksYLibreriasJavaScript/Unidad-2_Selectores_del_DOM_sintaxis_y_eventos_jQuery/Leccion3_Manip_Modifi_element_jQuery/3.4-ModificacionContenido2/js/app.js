@@ -27,9 +27,4 @@ $( document ).ready(function() {
     $("<div class='circulo amarillo'>Nuevo</div>").insertBefore($(".rojo"));
   });
 
-
-
-
-
-
 });
