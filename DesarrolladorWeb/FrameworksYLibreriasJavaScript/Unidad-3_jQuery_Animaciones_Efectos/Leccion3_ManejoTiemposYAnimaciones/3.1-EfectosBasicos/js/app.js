@@ -7,13 +7,21 @@ $(function(){
   })
 
   //Codigo para la captura
+  //Desaparecen elementos presionado la letra O
   // $(document).keypress(function(event){
   //   if (event.which == 111) {
   //     $(".oculto").fadeOut('slow','linear');
   //   }
   // })
 
-  //Codigo para la captura
+  //Aparece y oculta con la letra O
+  // $(document).keypress(function(event){
+  //   if (event.which == 111) {
+  //     $(".oculto").fadeToggle('slow','linear');
+  //   }
+  // })
+
+  //Codigo para la captura - Muestra Estadisticas de Partido con letra P
   // $(document).keypress(function(event){
   //   if (event.which == 111) {
   //     $(".oculto").fadeToggle('slow','linear');
@@ -23,6 +31,7 @@ $(function(){
   //   }
   // })
 
+  //Codigo para la captura - Muestra y Oculta Estadisticas de Partido con letra P
   $(document).keypress(function(event){
     if (event.which == 111) {
       $(".oculto").fadeToggle('slow','linear');
