@@ -1,0 +1,12 @@
+-argumentNames
+ * Prototype Agrega a las funciones, util cuando no conocemos su funcionamiento interno
+
+-bind
+-bindAsEventListener
+-curry
+
+-defer
+
+-delay
+-methodize
+-wrap
