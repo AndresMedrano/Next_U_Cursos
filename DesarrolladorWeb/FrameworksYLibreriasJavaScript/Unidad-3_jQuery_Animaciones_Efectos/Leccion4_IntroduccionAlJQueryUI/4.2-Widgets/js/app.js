@@ -3,7 +3,8 @@ $(function(){
   $("#accordion").accordion();
 
   $("#fecha").datepicker({
-    changeMonth: true
+    changeMonth: true,
+    changeYear: true
   });
 
   $(".emergente").dialog({
