@@ -1,0 +1,2 @@
+Array Strin Nombre
+Todos estos heredan del objeto object
