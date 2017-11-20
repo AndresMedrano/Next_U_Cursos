@@ -7,7 +7,7 @@
       if (username !== "") {
         var XHR = new XMLHttpRequest()
         var URLUser = URL + username
-        XHR.open('GET', URLUser)
+        XHR.open('GET', URLUser, false)
         XHR.onreadystatechange = function() {
           if(XHR.readyState === 4) {
             var data = JSON.parse(XHR.responseText)
