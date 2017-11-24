@@ -1,3 +1,12 @@
+<?php
+  const CATEGORIAS = array('profesor', 'estudiante', 'padre');
+  const MOD_PROFESOR = array('asignaturas', 'registro de notas', 'reuniones', 'tutorías');
+  const MOD_ESTUDIANTE = array('asignaturas cursadas', 'registro de notas');
+  const MOD_PADRE = array('reuniones', 'registro de notas');
+  $tipo_acceso = 'profesor';
+
+
+ ?>
 
 <!DOCTYPE html>
 <html>
@@ -30,7 +39,7 @@
   </div>
   <div class="container">
 
-
+    <?php if ($tipo_acceso == CATEGORIAS[0]) {  ?>
 
     <div class="row mod-container">
       <div class="col s5">
@@ -48,15 +57,17 @@
         <form class="" action="index.html" method="post">
           <div class="input-field col s12">
              <select>
-
-                 <option value=""></option>
-
+               <?php foreach (MOD_PROFESOR as $key => $value) { ?>
+                 <option value="<?php echo $value ?>"><?php echo $value ?></option>
+               <?php } ?>
              </select>
              <label class="teal-text">Módulo</label>
            </div>
         </form>
       </div>
-    </div
+    </div>
+    <?php } ?>
+    <?php if ($tipo_acceso == CATEGORIAS[1]) {  ?>
     <div class="row mod-container">
 
       <div class="col s7">
@@ -67,7 +78,9 @@
         <form class="" action="index.html" method="post">
           <div class="input-field col s12">
              <select>
-                 <option value=""></option>
+               <<?php foreach (MOD_ESTUDIANTE as $key => $value) { ?>
+                 <option value="<?php echo $value ?>"><?php echo $value ?></option>
+               <?php } ?>
              </select>
              <label class="teal-text">Módulo</label>
            </div>
@@ -81,7 +94,8 @@
         </div>
       </div>
     </div>
-
+    <?php } ?>
+    <?php if ($tipo_acceso == CATEGORIAS[2]) {  ?>
     <div class="row mod-container">
       <div class="col s5">
         <div class="card">
@@ -98,17 +112,26 @@
         <form class="" action="index.html" method="post">
           <div class="input-field col s12">
              <select>
-                 <option value=""></option>
+               <?php foreach (MOD_PADRE as $key => $value) { ?>
+                 <option value="<?php echo $value ?>"><?php echo $value ?></option>
+               <?php } ?>
              </select>
              <label class="teal-text">Módulo</label>
            </div>
         </form>
       </div>
     </div>
+    <?php } ?>
     <div class="row">
       <div class="col s2">
         <div class="collection">
-            <a href="#" class="collection-item">Grado:</a>
+          <?php
+          $a = 1;
+          while ($a <= 11) { ?>
+            <a href="#" class="collection-item">Grado: <?php echo $a ?></a>
+          <?php
+          $a++;
+          } ?>
         </div>
       </div>
       <div class="card-panel col s10">
@@ -122,7 +145,14 @@
             <span>Viernes</span>
             <span>Sábado</span>
           </div>
-            <div class="calendar-item hoverable"><span></span></div>
+          <?php
+          $days = 1;
+          do { ?>
+            <div class="calendar-item hoverable"><span><?php echo $days ?></span></div>
+          <?php
+            $days++;
+          } while ($days < 31); ?>
+
         </div>
       </div>
 
