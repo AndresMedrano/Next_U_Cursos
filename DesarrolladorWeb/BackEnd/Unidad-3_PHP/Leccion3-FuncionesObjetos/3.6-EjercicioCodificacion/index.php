@@ -4,8 +4,6 @@
   const MOD_ESTUDIANTE = array('asignaturas cursadas', 'registro de notas');
   const MOD_PADRE = array('reuniones', 'registro de notas');
   $tipo_acceso = 'profesor';
-
-
  ?>
 
 <!DOCTYPE html>
