@@ -7,13 +7,13 @@ $(function(){
   });
 
 
-  $('formulario').submit(function(event) {
-    var nombre = $('form').find('input[name="nombre_usuario"]').val()
-    event.preventDefault;
+  $('#formulario').submit(function(event) {
+    var nombre = $('form').find('input[name="nombre_usuario"]').val();
+    event.preventDefault();
     $.ajax(
       {
-        url:'./recepcion_formulario.php'
-        type: 'POST'
+        url:'./recepcion_formulario.php',
+        type: 'POST',
         data: {nombre: nombre}
       }
     ).done(function(data) {
